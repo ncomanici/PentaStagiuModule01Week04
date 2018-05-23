@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace UniversityLibrary
 {
-    internal class StudentsService
+    public class StudentsService : IStudentsService
     {
+        // code as in previous slides
         private List<Student> students;
         private static int nextId = 1;
 

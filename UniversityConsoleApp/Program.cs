@@ -104,7 +104,7 @@ namespace UniversityConsoleApp
 
         static void Main(string[] args)
         {
-            university = new University();
+            university = new University(new StudentsService());
             university.AddStudent("Nadia", "Comanici", new DateTime(1986, 01, 24), Gender.Female);
             university.AddStudent("Radu", "Popescu", new DateTime(1990, 10, 13), Gender.Male);
 

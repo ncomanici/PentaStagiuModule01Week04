@@ -8,11 +8,11 @@ namespace UniversityLibrary
 {
     public class University
     {
-        private StudentsService studentsService;
+        private IStudentsService studentsService;
 
-        public University()
+        public University(IStudentsService studentsService)
         {
-            this.studentsService = new StudentsService();
+            this.studentsService = studentsService;
         }
 
         public IEnumerable<Student> GetStudents()
